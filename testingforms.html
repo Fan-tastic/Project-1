@@ -1,18 +1,61 @@
 <html>
 <head>
+	<meta charset="utf-8">
+	<title>Project 1</title>
+	<link rel="stylesheet" href="main.css">
 	<body>
-  <form>
-  <p>Male<input type="checkbox" name="Male" />&nbsp;Female<input type="checkbox" name="Female" /></p>
-  <p>Transportation
+  <form action="form_action.asp" method="get">
+  <p class="comments">First name: <input type="text" name="fname" /></p>
+  <p>Last name: &nbsp;<input type="text" name="lname" /></p>
+  	<p class="comments">Check your favorite</p>
+  <p><input type="checkbox" name="Basketball" />Basketball</p>
+  <p><input type="checkbox" name="Football" />Football</p>
+  <p id="Transportation">Pick a transportation
 <select name="Transportation">
-<option value="Cars">Cars</option>
+<option value="Car">Car</option>
 <option value="Walk">Walk</option>
 <option value="Bus" selected="selected">Bus</option>
 <option value="Bike">Bike</option>
 </select></p>
-<p>Search&nbsp;<input type="text" name="Search" placeholder="Search" /></p>
+<p class="comments">Search&nbsp;<input type="text" name="Search" placeholder="Search" /></p>
  <input type="submit" value="Submit" />
 </form>
 </body>
 </head>
+<header>
+<section id="putThingsHere">fan</section>
+<section id="thisHere">Yang</section>
+<script>
+//var setDefaults = function(){
+	//var firstItem = document.getElementById('Transportation');
+	var elements=document.querySelectorAll(".comments");
+	for (var i = 0; i < elements.length; i++) {
+         
+	//firstItem.className = "elements";
+	elements[i].className="elements";
+    console.log(elements.length);
+}
+
+
+ //var highlight = document.querySelectorAll(".contact");
+    //for (var i = 0; i < highlight.length; i++) {
+         //highlight[i].className = "highlight";
+
+         //console.log(highlight.length);
+        //}
+//var element=document.getElementById("putThingsHere");
+//alert("wait a second!");
+//element.className = "first";
+//var greenBackgroundElements = document.getElementsByClassName("comments");
+//var  statItem =
+//document.querySelectorAll('comments');
+//for (var i=0; i<statItem.length;i++){
+	//statItem[i].className="comments";
+//}
+
+//console.log(greenBackgroundElements.length);
+</script>
+</header>
+
+
 </html>
